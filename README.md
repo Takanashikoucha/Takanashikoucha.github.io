@@ -1,1 +1,0 @@
-# Takanashikoucha.github.io
