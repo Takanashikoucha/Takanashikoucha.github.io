@@ -1,0 +1,607 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>使用VScode的感想和一些细节修改 · KouchaLab</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="TakanashiKoucha">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../style.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法.html" />
+    
+    
+    <link rel="prev" href="爬青空文库全站.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"Takanashikoucha","width":"200","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    红茶馆
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    日语
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    代码
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    杂文
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../2_杂文/2017-5-11博客细节更新.html">
+            
+                <a href="../2_杂文/2017-5-11博客细节更新.html">
+            
+                    
+                    2017-5-11博客细节更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../2_杂文/博客的细节调整.html">
+            
+                <a href="../2_杂文/博客的细节调整.html">
+            
+                    
+                    博客的细节调整
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../2_杂文/当你的linux使用的是中文.html">
+            
+                <a href="../2_杂文/当你的linux使用的是中文.html">
+            
+                    
+                    当你的linux使用的是中文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../2_杂文/第一次参加骑行比赛的经历.html">
+            
+                <a href="../2_杂文/第一次参加骑行比赛的经历.html">
+            
+                    
+                    第一次参加骑行比赛的经历
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../2_杂文/第一个完整的python程序.html">
+            
+                <a href="../2_杂文/第一个完整的python程序.html">
+            
+                    
+                    第一个完整的python程序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../2_杂文/记几年内最后一次长途骑行.html">
+            
+                <a href="../2_杂文/记几年内最后一次长途骑行.html">
+            
+                    
+                    记几年内最后一次长途骑行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../2_杂文/幸せになる.html">
+            
+                <a href="../2_杂文/幸せになる.html">
+            
+                    
+                    幸せになる
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../2_杂文/一张旧显卡.html">
+            
+                <a href="../2_杂文/一张旧显卡.html">
+            
+                    
+                    一张旧显卡
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../2_杂文/Blog细节再次调整.html">
+            
+                <a href="../2_杂文/Blog细节再次调整.html">
+            
+                    
+                    Blog细节再次调整
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    分享
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="爬青空文库全站.html">
+            
+                <a href="爬青空文库全站.html">
+            
+                    
+                    爬青空文库全站
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="使用VScode的感想和一些细节修改.html">
+            
+                <a href="使用VScode的感想和一些细节修改.html">
+            
+                    
+                    使用VScode的感想和一些细节修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法.html">
+            
+                <a href="又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法.html">
+            
+                    
+                    又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="运行一个自己的QQbot.html">
+            
+                <a href="运行一个自己的QQbot.html">
+            
+                    
+                    运行一个自己的QQbot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法.html">
+            
+                <a href="在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法.html">
+            
+                    
+                    在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="折腾了一下小米路由器mini.html">
+            
+                <a href="折腾了一下小米路由器mini.html">
+            
+                    
+                    折腾了一下小米路由器mini
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="kali-tools工具文档.html">
+            
+                <a href="kali-tools工具文档.html">
+            
+                    
+                    kali-tools工具文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="MacType配置文件.html">
+            
+                <a href="MacType配置文件.html">
+            
+                    
+                    MacType配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >使用VScode的感想和一些细节修改</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4E3B;&#x9898;"><b></b>&#x4E3B;&#x9898;</a></li><li><span class="title-icon "></span><a href="#&#x63D2;&#x4EF6;"><b></b>&#x63D2;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#&#x8BBE;&#x7F6E;"><b></b>&#x8BBE;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x5173;&#x4E8E;&#x6253;&#x9020;python&#x7684;ide"><b></b>&#x5173;&#x4E8E;&#x6253;&#x9020;Python&#x7684;IDE</a></li><li><span class="title-icon "></span><a href="#&#x6700;&#x540E;"><b></b>&#x6700;&#x540E;</a></li></ul></div><a href="#&#x4E3B;&#x9898;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><p>&#x561B;,&#x4E0D;&#x77E5;&#x4E0D;&#x89C9;&#x7528;VScode&#x4E5F;&#x6709;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4E86;.&#x5DF2;&#x7ECF;&#x628A;&#x5B83;&#x6253;&#x9020;&#x6210;&#x4E3A;&#x4E86;&#x975E;&#x5E38;&#x987A;&#x624B;&#x7684;&#x5DE5;&#x5177;.</p>
+<p>&#x4E0B;&#x9762;&#x5206;&#x51E0;&#x4E2A;&#x65B9;&#x9762;&#x6765;&#x8BB2;&#x4E00;&#x4E0B;&#x600E;&#x4E48;&#x8C03;&#x6574;VScode&#x7684;&#x8BBE;&#x7F6E;&#x6765;&#x8BA9;&#x81EA;&#x5DF1;&#x66F4;&#x8212;&#x670D;&#x5427;.</p>
+<h1 id="&#x4E3B;&#x9898;"><a name="&#x4E3B;&#x9898;" class="anchor-navigation-ex-anchor" href="#&#x4E3B;&#x9898;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3B;&#x9898;</h1>
+<p>&#x6211;&#x7528;&#x8FC7;&#x4E86;&#x633A;&#x591A;&#x7684;&#x4E3B;&#x9898;&#x7684;,&#x4E3B;&#x9898;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x9AD8;&#x4EAE;&#x4E0D;&#x540C;,&#x4E2A;&#x4EBA;&#x559C;&#x597D;&#x6697;&#x8272;&#x8C03;&#x4FDD;&#x62A4;&#x773C;&#x775B;,&#x4E8E;&#x662F;&#x6700;&#x540E;&#x9009;&#x62E9;&#x4E86;&#x4E00;&#x6B3E;&#x53EB;&#x505A;:  <a href="https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code" target="_blank">Nord</a> &#x7684;&#x4E3B;&#x9898;.</p>
+<p>&#x6697;&#x8272;&#x8C03;&#x548C;&#x8212;&#x670D;&#x7684;&#x754C;&#x9762;&#x89C2;&#x611F;,&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;&#x4E5F;&#x633A;&#x8212;&#x670D;&#x7684;.&#x611F;&#x89C9;&#x7A0D;&#x5FAE;&#x4F18;&#x4E8E;&#x6392;&#x540D;&#x6700;&#x9AD8;&#x7684; one dark pro</p>
+<p>&#x56FE;&#x6807;&#x7684;&#x8BDD;,&#x8FD8;&#x662F;&#x5076;&#x5C14;&#x5728;&#x66F4;&#x6362;,&#x76EE;&#x524D;&#x5728;&#x4F7F;&#x7528; <a href="https://marketplace.visualstudio.com/items?itemName=emmanuelbeziat.vscode-great-icons" target="_blank">VSCode Great Icons</a> .</p>
+<h1 id="&#x63D2;&#x4EF6;"><a name="&#x63D2;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x63D2;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63D2;&#x4EF6;</h1>
+<p>&#x4E2A;&#x4EBA;&#x4F7F;&#x7528;&#x4E86;&#x4EE5;&#x4E0B;&#x63D2;&#x4EF6;:</p>
+<ul>
+<li>C/C++ [c&#x8BED;&#x8A00;&#x652F;&#x6301;]</li>
+<li>Charcter Count [markdown&#x5B57;&#x6570;&#x8BA1;&#x6570;]</li>
+<li>Code Runner [&#x8FD0;&#x884C;&#x4EE3;&#x7801;]</li>
+<li>Git History [git&#x7684;log&#x663E;&#x793A;,&#x4E3B;&#x8981;&#x662F;&#x6709;&#x4E2A;&#x65F6;&#x95F4;&#x6D41;]</li>
+<li>Guides [&#x663E;&#x793A;&#x7F29;&#x8FDB;&#x53C2;&#x8003;&#x7EBF;]</li>
+<li>Java Debugger &amp; Language support for Java [Java&#x652F;&#x6301;]</li>
+<li>MagicPython [&#x5BF9;python&#x7684;&#x652F;&#x6301;&#x52A0;&#x5F3A;]</li>
+<li>Preview [html&#x548C;markdown&#x7684;&#x9884;&#x89C8;]</li>
+<li>Python [python&#x7684;&#x652F;&#x6301;]</li>
+<li>vscode-fileheader [&#x7528;&#x5FEB;&#x6377;&#x952E;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#x5230;&#x6587;&#x4EF6;&#x5934;]</li>
+</ul>
+<h1 id="&#x8BBE;&#x7F6E;"><a name="&#x8BBE;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8BBE;&#x7F6E;</h1>
+<p>&#x5BF9;&#x4E8E;&#x7F16;&#x8F91;&#x5668;,&#x4E3B;&#x8981;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x8C03;&#x6574;&#x5B57;&#x4F53;&#x548C;&#x884C;&#x9AD8;&#x5B57;&#x95F4;&#x8DDD;&#x4E4B;&#x7C7B;&#x7684;&#x6765;&#x8BA9;&#x773C;&#x775B;&#x66F4;&#x8212;&#x670D;.</p>
+<p>&#x5BF9;&#x4E8E;&#x5DE5;&#x4F5C;&#x533A;,&#x6700;&#x4E3B;&#x8981;&#x7684;&#x5C31;&#x662F;&#x628A;&#x83DC;&#x5355;&#x680F;&#x6539;&#x6210;&#x4E86;alt&#x53EF;&#x89C1;&#x7684;&#x6A21;&#x5F0F;,&#x5E73;&#x65F6;&#x4E0D;&#x9700;&#x8981;&#x7528;&#x5230;.&#x767D;&#x8272;&#x4E00;&#x6761;&#x9887;&#x5F71;&#x54CD;&#x6574;&#x4F53;&#x89C2;&#x611F;.&#x8FD8;&#x6709;&#x5C31;&#x662F;&#x63D2;&#x4EF6;&#x81EA;&#x52A8;&#x66F4;&#x65B0;&#x548C;&#x8C03;&#x8BD5;&#x7ED3;&#x675F;&#x540E;&#x81EA;&#x52A8;&#x8DF3;&#x56DE;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;.</p>
+<p>&#x5BF9;&#x4E8E;&#x5185;&#x7F6E;&#x7EC8;&#x7AEF;,&#x4FEE;&#x6539;&#x4E3A;&#x4E86;powershell,&#x901A;&#x8FC7;&#x4F20;&#x53C2;&#x542F;&#x52A8;&#x9ED8;&#x8BA4;&#x4E86;&#x7F16;&#x7801;&#x4E3A;utf-8,&#x4FEE;&#x6539;&#x4E86;&#x5149;&#x6807;&#x6837;&#x5F0F;&#x548C;&#x95EA;&#x70C1;,&#x5173;&#x95ED;&#x4E86;&#x54CD;&#x94C3;.</p>
+<p>python&#x9ED8;&#x8BA4;&#x7684;linting&#x6709;&#x70B9;&#x70E6;&#x4EBA;,&#x6240;&#x4EE5;&#x4FEE;&#x6539;&#x6210;&#x4E86;pep8,&#x683C;&#x5F0F;&#x5316;&#x4F7F;&#x7528;&#x4E86;yapf,&#x5173;&#x4E8E;&#x8FD9;&#x65B9;&#x9762;&#x540E;&#x9762;&#x8BE6;&#x7EC6;&#x8BB2;.</p>
+<p>java&#x9700;&#x8981;&#x8BBE;&#x7F6E;javahome&#x7684;&#x4F4D;&#x7F6E;,&#x9ED8;&#x8BA4;&#x7684;&#x597D;&#x50CF;&#x6709;&#x5F02;&#x5E38;,&#x4E0D;&#x662F;&#x5F88;&#x7ECF;&#x5E38;&#x7528;java&#x6240;&#x4EE5;&#x4E0D;&#x591A;&#x8BF4;.</p>
+<p>&#x8FD8;&#x6709;&#x5C31;&#x662F;html&#x7684;&#x81EA;&#x52A8;&#x6362;&#x884C;,markdown&#x7684;&#x5B57;&#x4F53;&#x4FEE;&#x6539;[&#x9ED8;&#x8BA4;&#x7684;&#x5B57;&#x4F53;&#x4E11;&#x70B8;,&#x539F;&#x672C;&#x6253;&#x7B97;&#x6362;css&#x6765;&#x6539;&#x7684;,&#x540E;&#x6765;&#x53D1;&#x73B0;&#x6539;&#x4E2A;&#x5B57;&#x4F53;&#x5C31;&#x597D;&#x591A;&#x4E86;].code runner&#x7F16;&#x7801;&#x5B58;&#x5728;&#x95EE;&#x9898;&#x6240;&#x4EE5;&#x6211;&#x8BBE;&#x7F6E;&#x4E86;&#x5728;&#x7EC8;&#x7AEF;&#x4E2D;&#x8FD0;&#x884C;.</p>
+<h1 id="&#x5173;&#x4E8E;&#x6253;&#x9020;python&#x7684;ide"><a name="&#x5173;&#x4E8E;&#x6253;&#x9020;python&#x7684;ide" class="anchor-navigation-ex-anchor" href="#&#x5173;&#x4E8E;&#x6253;&#x9020;python&#x7684;ide"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x4E8E;&#x6253;&#x9020;Python&#x7684;IDE</h1>
+<p>&#x9996;&#x5148;,&#x9700;&#x8981;&#x5B89;&#x88C5;python&#x63D2;&#x4EF6;.&#x7136;&#x540E;&#x5B89;&#x88C5;&#x4E0A;magicpython[&#x589E;&#x5F3A;&#x7528;]</p>
+<p>&#x7136;&#x540E;&#x4E2A;&#x4EBA;&#x662F;&#x4E60;&#x60EF;&#x5C06;launch.json&#x6587;&#x4EF6;&#x7684; &quot;stopOnEntry&quot;: true &#x6539;&#x4E3A; &quot;stopOnEntry&quot;: false .&#x8FD9;&#x6837;&#x5B50;&#x53EF;&#x4EE5;&#x4E0D;&#x7528;&#x6309;&#x4E24;&#x4E0B;&#x624D;&#x5F00;&#x59CB;&#x8FD0;&#x884C;.</p>
+<p>&#x9ED8;&#x8BA4;&#x7684;linting&#x975E;&#x5E38;&#x70E6;&#x4EBA;...&#x5F02;&#x5E38;&#x7684;&#x4E25;&#x683C;,&#x6240;&#x4EE5;&#x6211;&#x6362;&#x6210;&#x4E86;pep8&#x7684;lint .&#x683C;&#x5F0F;&#x5316;&#x7684;&#x8BDD;&#x4F7F;&#x7528;&#x4E86;yapf</p>
+<p>vscoded&#x7684;&#x52A0;&#x65AD;&#x70B9;&#x6765;&#x8C03;&#x8BD5;&#x8FD8;&#x662F;&#x633A;&#x65B9;&#x4FBF;&#x7684;.&#x5185;&#x7F6E;&#x7684;&#x7EC8;&#x7AEF;&#x4E5F;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;ipython&#x6765;&#x968F;&#x65F6;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x6D4B;&#x8BD5;.</p>
+<h1 id="&#x6700;&#x540E;"><a name="&#x6700;&#x540E;" class="anchor-navigation-ex-anchor" href="#&#x6700;&#x540E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6700;&#x540E;</h1>
+<p>&#x5B9E;&#x9645;&#x4E0A;,&#x672C;&#x535A;&#x5BA2;&#x4E5F;&#x662F;&#x4E00;&#x76F4;&#x5728;&#x4F7F;&#x7528;VScode&#x6765;&#x5199;&#x7684;,&#x4F53;&#x9A8C;&#x771F;&#x7684;&#x975E;&#x5E38;&#x68D2;.markdown&#x5B9E;&#x65F6;&#x9884;&#x89C8;&#x5F88;&#x8212;&#x670D;.&#x7EC8;&#x7AEF;&#x968F;&#x65F6;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x540C;&#x6B65;&#x4ED3;&#x5E93;.</p>
+<p>&#x4F7F;&#x7528;VScode&#x8FD9;&#x6BB5;&#x65F6;&#x95F4;&#x7684;&#x611F;&#x89C9;&#x7528;&#x51E0;&#x4E2A;&#x5B57;&#x5F62;&#x5BB9;&#x7684;&#x8BDD;&#x90A3;&#x5C31;&#x662F;:&#x5FEB;,&#x8F7B;,&#x65B9;&#x4FBF;</p>
+<footer class="page-footer"><span class="copyright">&#x5168;&#x90E8;&#x6587;&#x7AE0;&#x91C7;&#x7528; CC BY-NC-ND 4.0 &#x8BB8;&#x53EF;&#x534F;&#x8BAE; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2020-02-21 23:44:05
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="爬青空文库全站.html" class="navigation navigation-prev " aria-label="Previous page: 爬青空文库全站">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法.html" class="navigation navigation-next " aria-label="Next page: 又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"使用VScode的感想和一些细节修改","level":"1.5.2","depth":2,"next":{"title":"又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法","level":"1.5.3","depth":2,"path":"3_分享/又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法.md","ref":"3_分享/又是一顿折腾路由器-附带对于以后可能会使用的智能设备的想法.md","articles":[]},"previous":{"title":"爬青空文库全站","level":"1.5.1","depth":2,"path":"3_分享/爬青空文库全站.md","ref":"3_分享/爬青空文库全站.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","advanced-emoji","custom-favicon","disqus"],"styles":{"website":"/style.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"全部文章采用 CC BY-NC-ND 4.0 许可协议","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"shell":"bash"}},"disqus":{"useIdentifier":false,"shortName":"blog-kouchalab-win"},"splitter":{},"search-pro":{},"donate":{"alipay":"/img/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/img/fox.ico","theme-comscore":{},"github-buttons":{"buttons":[{"user":"Takanashikoucha","width":"200","type":"follow","count":true,"size":"small"}]},"custom-favicon":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TakanashiKoucha","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"KouchaLab","language":"zh-hans","gitbook":"*","description":"红茶菌的个人博客"},"file":{"path":"3_分享/使用VScode的感想和一些细节修改.md","mtime":"2020-02-21T15:44:05.284Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-21T17:06:36.029Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
