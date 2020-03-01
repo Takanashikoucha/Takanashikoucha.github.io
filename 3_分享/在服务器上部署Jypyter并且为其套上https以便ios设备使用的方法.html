@@ -448,29 +448,34 @@
 <h2 id="&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90E8;&#x7F72;jupyter"><a name="&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90E8;&#x7F72;jupyter" class="anchor-navigation-ex-anchor" href="#&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90E8;&#x7F72;jupyter"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x90E8;&#x7F72;jupyter</h2>
 <p>&#x63A8;&#x8350;&#x7531;<a href="https://www.anaconda.com/download/" target="_blank">annaconda</a>&#x5B89;&#x88C5;.
 &#x5148;&#x5B89;&#x88C5;annaconda,&#x4E4B;&#x540E;</p>
-<pre class="language-"><code>conda install jupyter
-</code></pre><h2 id="&#x751F;&#x6210;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x751F;&#x6210;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;Jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<pre class="language-"><code class="lang-bash">conda <span class="token function">install</span> jupyter
+</code></pre>
+<h2 id="&#x751F;&#x6210;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x751F;&#x6210;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;Jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
 <p>&#x5728;&#x542F;&#x52A8;Jupyter&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x542F;&#x52A8;&#xFF0C;&#x6240;&#x4EE5;&#x9996;&#x5148;&#x8981;&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x3002;&#x4F7F;&#x7528;&#x547D;&#x4EE4;</p>
-<pre class="language-"><code>jupyter notebook --generate-config
-</code></pre><p>&#x81EA;&#x52A8;&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x76EE;&#x5F55;&#x5E94;&#x8BE5;&#x662F;~/.jupyter&#x3002;</p>
+<pre class="language-"><code class="lang-bash">jupyter notebook --generate-config
+</code></pre>
+<p>&#x81EA;&#x52A8;&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x76EE;&#x5F55;&#x5E94;&#x8BE5;&#x662F;~/.jupyter&#x3002;</p>
 <h2 id="&#x751F;&#x6210;&#x5BC6;&#x7801;"><a name="&#x751F;&#x6210;&#x5BC6;&#x7801;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;&#x5BC6;&#x7801;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;&#x5BC6;&#x7801;</h2>
-<pre class="language-"><code># &#x5728;python&#x4E2D;&#x8FD0;&#x884C;
-from notebook.auth import passwd
-passwd()
-</code></pre><h2 id="&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;"><a name="&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;</h2>
-<pre class="language-"><code>openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem
-</code></pre><h2 id="&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
-<pre class="language-"><code># &#x5BC6;&#x7801;
-c.NotebookApp.password = u&apos;sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed&apos;
-# ssl&#x8BC1;&#x4E66;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;
- c.NotebookApp.certfile = u&apos;/absolute/path/to/your/certificate/mycert.pem&apos;
-c.NotebookApp.keyfile = u&apos;/absolute/path/to/your/certificate/mykey.key&apos;
-# &#x5176;&#x4ED6;&#x8BBE;&#x7F6E;
-c.NotebookApp.ip = &apos;*&apos;
-c.NotebookApp.allow_origin = &apos;*&apos;
-c.NotebookApp.open_browser = False
-c.NotebookApp.port = 9999
-</code></pre><h2 id="&#x8FD0;&#x884C;"><a name="&#x8FD0;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x884C;</h2>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x5728;python&#x4E2D;&#x8FD0;&#x884C;</span>
+from notebook.auth <span class="token function">import</span> <span class="token function">passwd</span>
+passwd<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+<h2 id="&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;"><a name="&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;" class="anchor-navigation-ex-anchor" href="#&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x751F;&#x6210;ssl&#x8BC1;&#x4E66;</h2>
+<pre class="language-"><code class="lang-bash">openssl req -x509 -nodes -days <span class="token number">365</span> -newkey rsa:1024 -keyout mykey.key -out mycert.pem
+</code></pre>
+<h2 id="&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4FEE;&#x6539;jupyter&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h2>
+<pre class="language-"><code class="lang-bash"><span class="token comment"># &#x5BC6;&#x7801;</span>
+c.NotebookApp.password <span class="token operator">=</span> u<span class="token string">&apos;sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed&apos;</span>
+<span class="token comment"># ssl&#x8BC1;&#x4E66;&#x7EDD;&#x5BF9;&#x4F4D;&#x7F6E;</span>
+ c.NotebookApp.certfile <span class="token operator">=</span> u<span class="token string">&apos;/absolute/path/to/your/certificate/mycert.pem&apos;</span>
+c.NotebookApp.keyfile <span class="token operator">=</span> u<span class="token string">&apos;/absolute/path/to/your/certificate/mykey.key&apos;</span>
+<span class="token comment"># &#x5176;&#x4ED6;&#x8BBE;&#x7F6E;</span>
+c.NotebookApp.ip <span class="token operator">=</span> <span class="token string">&apos;*&apos;</span>
+c.NotebookApp.allow_origin <span class="token operator">=</span> <span class="token string">&apos;*&apos;</span>
+c.NotebookApp.open_browser <span class="token operator">=</span> False
+c.NotebookApp.port <span class="token operator">=</span> <span class="token number">9999</span>
+</code></pre>
+<h2 id="&#x8FD0;&#x884C;"><a name="&#x8FD0;&#x884C;" class="anchor-navigation-ex-anchor" href="#&#x8FD0;&#x884C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD0;&#x884C;</h2>
 <p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x7528;jupyter&#x547D;&#x4EE4;&#x5E94;&#x8BE5;&#x5C31;&#x80FD;&#x8FD0;&#x884C;&#x4E86;,&#x5E76;&#x4E14;&#x901A;&#x8FC7;<a href="https://ip:&#x7AEF;&#x53E3;" target="_blank">https://ip:&#x7AEF;&#x53E3;</a> &#x7684;&#x5F62;&#x5F0F;&#x5E94;&#x8BE5;&#x5C31;&#x80FD;&#x8BBF;&#x95EE;.</p>
 <p>&#x901A;&#x8FC7; nohup &#x547D;&#x4EE4;&#x5E94;&#x8BE5;&#x5C31;&#x80FD;&#x591F;&#x540E;&#x53F0;&#x6301;&#x4E45;&#x5316;&#x8FD0;&#x884C;.</p>
 <p>&#x4F46;&#x662F;&#x73B0;&#x5728;&#x4F9D;&#x7136;&#x662F;&#x4E0D;&#x5B89;&#x5168;&#x7684;ssl&#x8BC1;&#x4E66;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;ios&#x8BBE;&#x5907;&#x8BBF;&#x95EE;.</p>
@@ -482,7 +487,7 @@ c.NotebookApp.port = 9999
 <li>&#x4F7F;&#x7528;cloud flare&#x7BA1;&#x7406;dns(&#x6DFB;&#x52A0;cdn,https,&#x9632;ddos&#x7B49;&#x529F;&#x80FD;)</li>
 </ol>
 <footer class="page-footer"><span class="copyright">&#x5168;&#x90E8;&#x6587;&#x7AE0;&#x91C7;&#x7528; CC BY-NC-ND 4.0 &#x8BB8;&#x53EF;&#x534F;&#x8BAE; all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-02-21 23:44:05
+2020-03-02 01:27:32
 </span></footer>
                                 
                                 </section>
@@ -526,7 +531,7 @@ c.NotebookApp.port = 9999
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法","level":"1.5.6","depth":2,"next":{"title":"折腾了一下小米路由器mini","level":"1.5.7","depth":2,"path":"3_分享/折腾了一下小米路由器mini.md","ref":"3_分享/折腾了一下小米路由器mini.md","articles":[]},"previous":{"title":"运行一个自己的QQbot","level":"1.5.5","depth":2,"path":"3_分享/运行一个自己的QQbot.md","ref":"3_分享/运行一个自己的QQbot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","advanced-emoji","custom-favicon","disqus"],"styles":{"website":"/style.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"全部文章采用 CC BY-NC-ND 4.0 许可协议","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"],"lang":{"shell":"bash"}},"disqus":{"useIdentifier":false,"shortName":"blog-kouchalab-win"},"splitter":{},"search-pro":{},"donate":{"alipay":"/img/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":"/img/fox.ico","theme-comscore":{},"github-buttons":{"buttons":[{"user":"Takanashikoucha","width":"200","type":"follow","count":true,"size":"small"}]},"custom-favicon":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TakanashiKoucha","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"KouchaLab","language":"zh-hans","gitbook":"*","description":"红茶菌的个人博客"},"file":{"path":"3_分享/在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法.md","mtime":"2020-02-21T15:44:05.286Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-28T19:05:52.711Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法","level":"1.5.6","depth":2,"next":{"title":"折腾了一下小米路由器mini","level":"1.5.7","depth":2,"path":"3_分享/折腾了一下小米路由器mini.md","ref":"3_分享/折腾了一下小米路由器mini.md","articles":[]},"previous":{"title":"运行一个自己的QQbot","level":"1.5.5","depth":2,"path":"3_分享/运行一个自己的QQbot.md","ref":"3_分享/运行一个自己的QQbot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-comscore","prism","prism-themes","-highlight","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","donate","tbfed-pagefooter","anchor-navigation-ex","advanced-emoji","favicon-custom","disqus"],"styles":{"website":"/style.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"全部文章采用 CC BY-NC-ND 4.0 许可协议","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"disqus":{"useIdentifier":false,"shortName":"blog-kouchalab-win"},"splitter":{},"search-pro":{},"favicon-custom":{"appleTouchIconPrecomposed152":"./favicon.ico","favicon":"./favicon.ico"},"donate":{"alipay":"/img/alipay.jpg","alipayText":"支付宝打赏","button":"打赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"theme-comscore":{},"prism-themes":{},"github-buttons":{"buttons":[{"user":"Takanashikoucha","width":"200","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"TakanashiKoucha","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"KouchaLab","language":"zh-hans","gitbook":"*","description":"红茶菌的个人博客"},"file":{"path":"3_分享/在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法.md","mtime":"2020-03-01T17:27:32.473Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T17:46:25.194Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
