@@ -1,4 +1,4 @@
-baseurl: https://blog.kouchalab.win
+baseurl: https://takanashikoucha.github.io/
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 10
