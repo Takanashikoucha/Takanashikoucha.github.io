@@ -207,3 +207,6 @@ markup:
         lineNos: true
         lineNumbersInTable: true
         tabWidth: 4
+        style: onedark
+
+timeout: 600000
