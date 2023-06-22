@@ -1,7 +1,7 @@
 ---
 title: "在服务器上部署Jypyter并且为其套上https以便ios设备使用的方法"
 slug: ""
-description: ""
+description: "2023年应该还是这样的"
 date: 2023-06-23T03:05:52+08:00
 lastmod: 2023-06-23T03:05:52+08:00
 draft: false

@@ -1,7 +1,7 @@
 ---
 title: "青海旅游时候的一些图"
 slug: ""
-description: ""
+description: "图集"
 date: 2023-06-23T03:11:44+08:00
 lastmod: 2023-06-23T03:11:44+08:00
 draft: false

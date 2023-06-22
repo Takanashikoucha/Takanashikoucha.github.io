@@ -1,7 +1,7 @@
 ---
 title: "爬青空文库全站"
 slug: ""
-description: ""
+description: "主要记录下wget遍历"
 date: 2023-06-23T03:01:28+08:00
 lastmod: 2023-06-23T03:01:28+08:00
 draft: false

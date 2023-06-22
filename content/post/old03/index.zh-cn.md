@@ -1,7 +1,7 @@
 ---
 title: "第一个完整的python程序"
 slug: ""
-description: ""
+description: "直接用tkinter撸GUI，我觉得也是有点过于懒"
 date: 2023-06-23T02:39:36+08:00
 lastmod: 2023-06-23T02:39:36+08:00
 draft: false

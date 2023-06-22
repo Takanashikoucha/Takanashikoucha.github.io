@@ -1,7 +1,7 @@
 ---
 title: "一张旧显卡"
 slug: ""
-description: ""
+description: "2023年苹果的头显似乎证明了我的看法"
 date: 2023-06-23T02:50:22+08:00
 lastmod: 2023-06-23T02:50:22+08:00
 draft: false

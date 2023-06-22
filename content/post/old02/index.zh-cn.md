@@ -1,7 +1,7 @@
 ---
 title: "第一次参加骑行比赛的经历"
 slug: ""
-description: ""
+description: "2016年的事情了"
 date: 2023-06-23T02:34:33+08:00
 lastmod: 2023-06-23T02:34:33+08:00
 draft: false

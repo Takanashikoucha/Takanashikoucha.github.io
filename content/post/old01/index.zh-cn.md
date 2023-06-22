@@ -1,7 +1,7 @@
 ---
 title: "当你的linux使用的是中文"
 slug: ""
-description: ""
+description: "遇到这样的显示效果真的很难绷"
 date: 2023-06-23T02:05:59+08:00
 lastmod: 2023-06-23T02:05:59+08:00
 draft: false
