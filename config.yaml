@@ -1,4 +1,4 @@
-baseurl: https://takanashikoucha.github.io/
+baseurl: https://blog.kouchalab.win/
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 10
@@ -171,11 +171,12 @@ params:
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
     social:
-        - identifier: github
-          name: TakanashiKoucha
-          url: https://github.com/Takanashikoucha
-          params:
-              icon: brand-github
+        name: TakanashiKoucha
+        url: https://github.com/Takanashikoucha
+        weight: 0
+        params:
+            icon: brand-github
+            newtab: true
 
 related:
     includeNewer: true
