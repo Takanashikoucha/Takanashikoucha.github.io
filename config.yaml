@@ -170,9 +170,11 @@ params:
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
+    main: []
+
     social:
         - identifier: github
-          name: TakanashiKoucha
+          name: Github
           url: https://github.com/Takanashikoucha
           weight: 0
           params:
