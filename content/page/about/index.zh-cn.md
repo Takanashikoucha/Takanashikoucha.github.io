@@ -17,13 +17,13 @@ E-mail：[katanashikoucha@outlook.com](katanashikoucha@outlook.com)
 来自福建，学的日语，现在当的程序员
 
 # 🎉其他搭建的网站：
-[github加速（好像失效了）](git.kouchalab.win)
+[github加速（好像失效了）](https://git.kouchalab.win)
 
-[下面有提到的假名游戏，挂在Railway免费版上](kanaasobi.kouchalab.online)
+[下面有提到的假名游戏，挂在Railway免费版上](https://kanaasobi.kouchalab.online)
 
-[每日查看信息，也是Railway](today.kouchalab.online)
+[每日查看信息，也是Railway](https://today.kouchalab.online)
 
-[纪念日和相册](xn--jlqz7k134a.xn--6qq986b3xl)
+[纪念日和相册](https://xn--jlqz7k134a.xn--6qq986b3xl)
 
 
 # 🏆目前正在：
