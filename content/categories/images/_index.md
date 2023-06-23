@@ -4,6 +4,6 @@ description: "就是一些随手整的图罢了"
 slug: ""
 image: "images.webp"
 style:
-    background: "#2a9d8f"
+    background: "#ec7696"
     color: "#fff"
 ---
