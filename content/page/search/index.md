@@ -1,6 +1,6 @@
 ---
-title: "Search"
-slug: "search"
+title: "搜索"
+slug: "搜索"
 layout: "search"
 outputs:
     - html
