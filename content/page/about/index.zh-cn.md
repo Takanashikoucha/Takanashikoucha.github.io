@@ -11,7 +11,7 @@ menu:
 日语 代码 音乐
 
 # 📧联系方式：
-E-mail：[katanashikoucha@outlook.com](katanashikoucha@outlook.com)
+E-mail：<katanashikoucha@outlook.com>
 
 # 😶‍🌫️自我介绍：
 来自福建，学的日语，现在当的程序员
